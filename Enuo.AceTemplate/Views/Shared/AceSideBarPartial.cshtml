@@ -1,0 +1,479 @@
+﻿@*导航部分页*@
+<div id="sidebar" class="sidebar responsive">
+    <script type="text/javascript">
+        try { ace.settings.check('sidebar', 'fixed') } catch (e) { }
+    </script>
+    <!-- /.sidebar-shortcuts -->
+    <div class="sidebar-shortcuts" id="sidebar-shortcuts">
+        <div class="sidebar-shortcuts-large" id="sidebar-shortcuts-large">
+            <button class="btn btn-success">
+                <i class="ace-icon fa fa-signal"></i>
+            </button>
+
+            <button class="btn btn-info">
+                <i class="ace-icon fa fa-pencil"></i>
+            </button>
+
+            <!-- #section:basics/sidebar.layout.shortcuts -->
+            <button class="btn btn-warning">
+                <i class="ace-icon fa fa-users"></i>
+            </button>
+
+            <button class="btn btn-danger">
+                <i class="ace-icon fa fa-cogs"></i>
+            </button>
+
+            <!-- /section:basics/sidebar.layout.shortcuts -->
+        </div>
+
+        <div class="sidebar-shortcuts-mini" id="sidebar-shortcuts-mini">
+            <span class="btn btn-success"></span>
+
+            <span class="btn btn-info"></span>
+
+            <span class="btn btn-warning"></span>
+
+            <span class="btn btn-danger"></span>
+        </div>
+    </div>
+
+    <ul class="nav nav-list">
+        <!--Dashboard-->
+        <li class="active">
+            <a href="@Url.Action("Dashboard","Home")">
+                <i class="menu-icon fa fa-tachometer"></i>
+                <span class="menu-text"> Dashboard </span>
+            </a>
+            <b class="arrow"></b>
+        </li>
+
+        <!--Elements-->
+        <li>
+            <a class="dropdown-toggle">
+                <i class="menu-icon fa fa-desktop"></i>
+                <span class="menu-text">
+                    UI &amp; Elements
+                </span>
+
+                <b class="arrow fa fa-angle-down"></b>
+            </a>
+
+            <b class="arrow"></b>
+
+            <ul class="submenu">
+                <li>
+                    <a asp-controller="Elements" asp-action="Typography">
+                        <i class="menu-icon fa fa-pencil orange"></i>
+                        Typography
+                    </a>
+                    <b class="arrow"></b>
+                </li>
+                <li>
+                    <a asp-controller="Elements" asp-action="Element">
+                        <i class="menu-icon fa fa-key red"></i>
+                        Elments
+                    </a>
+                    <b class="arrow"></b>
+                </li>
+                <li>
+                    <a asp-controller="Elements" asp-action="Buttons">
+                        <i class="menu-icon fa fa-laptop blue"></i>
+                        Buttons &amp; Icons
+                    </a>
+                    <b class="arrow"></b>
+                </li>
+                <li>
+                    <a asp-controller="Elements" asp-action="ContentSlider">
+                        <i class="menu-icon fa fa-gavel red"></i>
+                        Content Sliders
+                    </a>
+                    <b class="arrow"></b>
+                </li>
+                <li>
+                    <a asp-controller="Elements" asp-action="Treeview">
+                        <i class="menu-icon fa fa-gavel red"></i>
+                        TreeView
+                    </a>
+                    <b class="arrow"></b>
+                </li>
+                <li>
+                    <a asp-controller="Elements" asp-action="JQueryUI">
+                        <i class="menu-icon fa fa-gavel red"></i>
+                        jQuery UI
+                    </a>
+                    <b class="arrow"></b>
+                </li>
+                <li>
+                    <a asp-controller="Elements" asp-action="NestableList">
+                        <i class="menu-icon fa fa-gavel red"></i>
+                        Nestable Lists
+                    </a>
+                    <b class="arrow"></b>
+                </li>
+
+                <li>
+                    <a href="#" class="dropdown-toggle">
+                        <i class="menu-icon fa fa-caret-right"></i>
+
+                        Three Level Menu
+                        <b class="arrow fa fa-angle-down"></b>
+                    </a>
+
+                    <b class="arrow"></b>
+
+                    <ul class="submenu">
+                        <li>
+                            <a href="#">
+                                <i class="menu-icon fa fa-leaf green"></i>
+                                Item #1
+                            </a>
+
+                            <b class="arrow"></b>
+                        </li>
+
+                        <li>
+                            <a href="#" class="dropdown-toggle">
+                                <i class="menu-icon fa fa-pencil orange"></i>
+
+                                4th level
+                                <b class="arrow fa fa-angle-down"></b>
+                            </a>
+
+                            <b class="arrow"></b>
+
+                            <ul class="submenu">
+                                <li>
+                                    <a href="#">
+                                        <i class="menu-icon fa fa-plus purple"></i>
+                                        Add Product
+                                    </a>
+
+                                    <b class="arrow"></b>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <i class="menu-icon fa fa-eye pink"></i>
+                                        View Products
+                                    </a>
+
+                                    <b class="arrow"></b>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+
+        <!--Tables-->
+        <li>
+            <a class="dropdown-toggle">
+                <i class="menu-icon fa fa-file-o"></i>
+                <span class="menu-text">
+                    Tables
+                    <span class="badge badge-primary">4</span>
+                </span>
+                <b class="arrow fa fa-angle-down"></b>
+            </a>
+            <b class="arrow"></b>
+
+            <ul class="submenu">
+                <li>
+                    <a asp-controller="Tables" asp-action="Index">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        Simple &amp; Dynamic
+                    </a>
+                    <b class="arrow"></b>
+                </li>
+
+                <li>
+                    <a asp-controller="Tables" asp-action="jqGrid">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        jqGrid plugin
+                    </a>
+                    <b class="arrow"></b>
+                </li>
+            </ul>
+        </li>
+
+        <!--Forms-->
+        <li>
+            <a class="dropdown-toggle">
+                <i class="menu-icon fa fa-list"></i>
+                <span class="menu-text">Forms </span>
+
+                <b class="arrow fa fa-angle-down"></b>
+            </a>
+
+            <b class="arrow"></b>
+
+            <ul class="submenu">
+                <li>
+                    <a asp-controller="Form" asp-action="FormElement1">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        Form Elements
+                    </a>
+                    <b class="arrow"></b>
+                </li>
+                <li>
+                    <a asp-controller="Form" asp-action="FormElement2">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        Forms Elements 2
+                    </a>
+                    <b class="arrow"></b>
+                </li>
+                <li>
+                    <a asp-controller="Form" asp-action="FormWizard">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                       Wizard &amp; Validation
+                    </a>
+                    <b class="arrow"></b>
+                </li>
+                <li>
+                    <a asp-controller="Form" asp-action="Wysiwyg">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        Wysiwyg &amp; Markdown
+                    </a>
+                    <b class="arrow"></b>
+                </li>
+                <li>
+                    <a asp-controller="Form" asp-action="Dropzone">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        Dropzone File Upload
+                    </a>
+                    <b class="arrow"></b>
+                </li>
+            </ul>
+        </li>
+
+        <!--Widgets-->
+        <li>
+            <a asp-controller="Home" asp-action="Widgets">
+                <i class="menu-icon fa fa-list-alt"></i>
+                <span class="menu-text"> Widgets </span>
+            </a>
+
+            <b class="arrow"></b>
+        </li>
+
+        <!--Calendar-->
+        <li>
+            <a asp-controller="Home" asp-action="Calendar">
+                <i class="menu-icon fa fa-calendar"></i>
+
+                <span class="menu-text">
+                    Calendar
+
+                    <span class="badge badge-transparent tooltip-error" title="2 Important Events">
+                        <i class="ace-icon fa fa-exclamation-triangle red bigger-130"></i>
+                    </span>
+                </span>
+            </a>
+
+            <b class="arrow"></b>
+        </li>
+
+        <!--More Pages-->
+        <li>
+            <a class="dropdown-toggle">
+                <i class="menu-icon fa fa-list-alt"></i>
+                <span class="menu-text">More Pages</span>
+                <b class="arrow fa fa-angle-down"></b>
+            </a>
+
+            <b class="arrow"></b>
+
+            <ul class="submenu">
+                <li>
+                    <a asp-controller="Template" asp-action="UserProfile">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        User Profile
+                    </a>
+                    <b class="arrow"></b>
+                </li>
+
+                <li>
+                    <a asp-controller="Template" asp-action="PricingTables">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        Pricing Tables
+                    </a>
+                    <b class="arrow"></b>
+                </li>
+
+                <li>
+                    <a asp-controller="Template" asp-action="SearchResults">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        Search Results
+                    </a>
+                    <b class="arrow"></b>
+                </li>
+
+                <li>
+                    <a asp-controller="Template" asp-action="EmailTemplates">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        Email Templates
+                    </a>
+                    <b class="arrow"></b>
+                </li>
+            </ul>
+        </li>
+
+        <!--Other Pages-->
+        <li>
+            <a class="dropdown-toggle">
+                <i class="menu-icon fa fa-list-alt"></i>
+                <span class="menu-text">Basic Pages</span>
+                <b class="arrow fa fa-angle-down"></b>
+            </a>
+
+            <b class="arrow"></b>
+
+            <ul class="submenu">
+                <li>
+                    <a asp-controller="Default" asp-action="Blank">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        Blank Page
+                    </a>
+                    <b class="arrow"></b>
+                </li>
+
+                <li>
+                    <a asp-controller="Default" asp-action="GridLayout">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        Grid
+                    </a>
+                    <b class="arrow"></b>
+                </li>
+
+                <li>
+                    <a asp-controller="Default" asp-action="FAQ">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        FAQ
+                    </a>
+                    <b class="arrow"></b>
+                </li>
+
+                <li>
+                    <a asp-controller="Default" asp-action="Error404">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        Error 404
+                    </a>
+                    <b class="arrow"></b>
+                </li>
+
+                <li>
+                    <a asp-controller="Default" asp-action="Error500">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        Error 500
+                    </a>
+                    <b class="arrow"></b>
+                </li>
+ 
+            </ul>
+        </li>
+
+        <!--Template Pages-->
+        <li>
+            <a class="dropdown-toggle">
+                <i class="menu-icon fa fa-pencil-square-o"></i>
+                <span class="menu-text">Template Pages</span>
+
+                <b class="arrow fa fa-angle-down"></b>
+            </a>
+
+            <b class="arrow"></b>
+
+            <ul class="submenu">              
+                <li>
+                    <a asp-controller="Template" asp-action="Inbox">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        Inbox
+                    </a>
+                    <b class="arrow"></b>
+                </li>
+                
+                <li>
+                    <a asp-controller="Template" asp-action="Invoice">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        Invoice
+                    </a>
+                    <b class="arrow"></b>
+                </li>
+
+                <li>
+                    <a asp-controller="Template" asp-action="Timeline">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        Timeline
+                    </a>
+                    <b class="arrow"></b>
+                </li>
+                
+                <li>
+                    <a asp-controller="Home" asp-action="Gallery">
+                        <i class="menu-icon fa fa-picture-o"></i>
+                        Gallery
+                    </a>
+                    <b class="arrow"></b>
+                </li>
+                
+                <li>
+                    <a asp-controller="Template" asp-action="SimpleTable">
+                        <i class="menu-icon fa fa-picture-o"></i>
+                        SimpleTalbe
+                    </a>
+                    <b class="arrow"></b>
+                </li>
+
+            </ul>
+        </li>
+
+        <!--Authentication-->
+        <li>
+            <a class="dropdown-toggle">
+                <i class="menu-icon fa fa-list-alt"></i>
+                <span class="menu-text">Authentication</span>
+                <b class="arrow fa fa-angle-down"></b>
+            </a>
+
+            <b class="arrow"></b>
+
+            <ul class="submenu">
+                <li>
+                    <a asp-controller="Authentication" asp-action="Login">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        Login
+                    </a>
+                    <b class="arrow"></b>
+                </li>
+
+                <li>
+                    <a asp-controller="Authentication" asp-action="Register">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        Register
+                    </a>
+                    <b class="arrow"></b>
+                </li>
+                <li>
+                    <a asp-controller="Authentication" asp-action="Forget">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        Forget
+                    </a>
+                    <b class="arrow"></b>
+                </li>
+            </ul>
+        </li>
+
+    </ul>
+
+    <!-- #section:basics/sidebar.layout.minimize -->
+    <div class="sidebar-toggle sidebar-collapse" id="sidebar-collapse">
+        <i class="ace-icon fa fa-angle-double-left" data-icon1="ace-icon fa fa-angle-double-left" data-icon2="ace-icon fa fa-angle-double-right"></i>
+    </div>
+
+    <!-- /section:basics/sidebar.layout.minimize -->
+    <script type="text/javascript">
+        try { ace.settings.check('sidebar', 'collapsed') } catch (e) { }
+
+    </script>
+</div>
