@@ -4,7 +4,7 @@ Create Asp.net Core Template by VS2017 based on Twitter Ace HtmlTemplate
 - C#
 - ASP.NET Core
 - JavaScript, jQuery
-- Entity Framework Core
+
 # Prerequisites
 - Visual Studio 2017
 # How to contribute
